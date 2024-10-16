@@ -36,6 +36,7 @@ public class User {
     private String password;
 
 
+    private String email;
 
     private String fullName;
     private String mobile;
@@ -48,6 +49,15 @@ public class User {
     @ManyToMany
     @JsonIgnore
     private Set<Coupon> useCopons=new HashSet<>();
+    public String getEmail() {
+        throw new UnsupportedOperationException("Unimplemented method 'getEmail'");
+    }
+    public String getPassword() {
+        throw new UnsupportedOperationException("Unimplemented method 'getPassword'");
+    }
+    public USER_ROLE getRole() {
+        throw new UnsupportedOperationException("Unimplemented method 'getRole'");
+    }
 
 
 

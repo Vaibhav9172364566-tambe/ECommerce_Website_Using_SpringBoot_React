@@ -29,7 +29,10 @@ public class CartItem {
     @JsonIgnore
     private Cart cart;
 
-    private Product CartItem;
+
+
+    @ManyToOne
+    private Product product;
     private String size;
     private int quantity=1;
 
