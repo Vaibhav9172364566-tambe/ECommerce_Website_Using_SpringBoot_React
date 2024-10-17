@@ -1,6 +1,5 @@
 package com.demo.ecommerce.controller;
 
-import java.beans.JavaBean;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.demo.ecommerce.domain.USER_ROLE;
 import com.demo.ecommerce.modal.VerificationCode;
 import com.demo.ecommerce.repositiory.UserRepository;
+import com.demo.ecommerce.request.LoginRequest;
 import com.demo.ecommerce.response.ApiResponse;
 import com.demo.ecommerce.response.AuthResponse;
 import com.demo.ecommerce.service.AuthService;
@@ -53,6 +53,19 @@ public class AuthController {
         return ResponseEntity.ok(res);
 
     }
+
+
+    @PostMapping("/signing")
+    public ResponseEntity<AuthResponse> loginHandler
+    (@RequestBody LoginRequest req ) throws Exception{
+        
+        AuthResponse authResponse =authService.siging(req);
+
+        
+        return ResponseEntity.ok(authResponse);
+
+    }
+
 
 }
 

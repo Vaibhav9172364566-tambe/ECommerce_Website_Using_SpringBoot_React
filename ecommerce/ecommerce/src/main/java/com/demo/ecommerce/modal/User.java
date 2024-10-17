@@ -1,7 +1,5 @@
 package com.demo.ecommerce.modal;
 
-import java.util.HashSet;
-
 import org.hibernate.mapping.OneToMany;
 
 import java.util.*;
@@ -48,18 +46,23 @@ public class User {
     private  Set<Address> address=new  HashSet<>();
     @ManyToMany
     @JsonIgnore
+
     private Set<Coupon> useCopons=new HashSet<>();
     public String getEmail() {
-        throw new UnsupportedOperationException("Unimplemented method 'getEmail'");
+       
+        return email;
     }
     public String getPassword() {
-        throw new UnsupportedOperationException("Unimplemented method 'getPassword'");
+        
+        return password;
     }
     public USER_ROLE getRole() {
-        throw new UnsupportedOperationException("Unimplemented method 'getRole'");
+        
+        return role;
     }
 
 
+   
 
 
 }
