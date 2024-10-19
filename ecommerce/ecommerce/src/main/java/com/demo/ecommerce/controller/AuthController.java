@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.demo.ecommerce.domain.USER_ROLE;
 import com.demo.ecommerce.modal.VerificationCode;
 import com.demo.ecommerce.repositiory.UserRepository;
+import com.demo.ecommerce.request.LoginOtpRequest;
 import com.demo.ecommerce.request.LoginRequest;
 import com.demo.ecommerce.response.ApiResponse;
 import com.demo.ecommerce.response.AuthResponse;
@@ -44,9 +45,9 @@ public class AuthController {
     }
     
     @PostMapping("/sent/login-signup-otp")
-    public ResponseEntity<ApiResponse> sendOtpHandler(@RequestBody VerificationCode req ) throws Exception{
+    public ResponseEntity<ApiResponse> sendOtpHandler(@RequestBody LoginOtpRequest req ) throws Exception{
         
-        authService.sentLoginOtp(req.getEmail());
+        authService.sentLoginOtp(req.getEmail(),req.getRole());
 
         ApiResponse res = new ApiResponse();
         res.setMessage("OTP sent successfully");

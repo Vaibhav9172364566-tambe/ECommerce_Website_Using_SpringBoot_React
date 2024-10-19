@@ -6,6 +6,7 @@ import com.demo.ecommerce.modal.VerificationCode;
 
 public interface VerificationCodeRepo  extends JpaRepository<VerificationCode,Long>{
     VerificationCode findByEmail(String email);
+    VerificationCode findByOtp(String otp);
 
 
     
