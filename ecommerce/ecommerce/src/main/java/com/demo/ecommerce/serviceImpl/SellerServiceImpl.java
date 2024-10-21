@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import com.demo.ecommerce.config.JwtProvider;
 import com.demo.ecommerce.domain.AccountStatus;
 import com.demo.ecommerce.domain.USER_ROLE;
+import com.demo.ecommerce.exception.SellerException;
 import com.demo.ecommerce.modal.Address;
 import com.demo.ecommerce.modal.Seller;
 import com.demo.ecommerce.repositiory.AddressRepository;
@@ -60,8 +61,8 @@ public class SellerServiceImpl implements SellerService{
     }
 
     @Override
-    public Seller getSellerById(Long id) throws Exception{
-        return sellerRepository.findById(id).orElseThrow(()->new Exception("Seller not found with id : "+id));
+    public Seller getSellerById(Long id) throws SellerException{
+        return sellerRepository.findById(id).orElseThrow(()->new SellerException("Seller not found with id : "+id));
         
     }
 

@@ -147,6 +147,7 @@ import org.springframework.web.bind.annotation.*;
 
 import com.demo.ecommerce.domain.AccountStatus;
 import com.demo.ecommerce.domain.USER_ROLE;
+import com.demo.ecommerce.exception.SellerException;
 import com.demo.ecommerce.modal.Seller;
 import com.demo.ecommerce.modal.VerificationCode;
 import com.demo.ecommerce.repositiory.VerificationCodeRepo;
@@ -232,7 +233,7 @@ public class SellerController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Seller> getSellerById(@PathVariable Long id) throws Exception{
+    public ResponseEntity<Seller> getSellerById(@PathVariable Long id) throws SellerException{
         Seller seller=sellerService.getSellerById(id);
         return new ResponseEntity<>(seller,HttpStatus.OK);
     }
@@ -252,7 +253,8 @@ public class SellerController {
 
 
     @PatchMapping()
-    public ResponseEntity<Seller> updateSeller(@RequestHeader("Authorization") String jwt,@RequestBody Seller seller) throws Exception{
+    public ResponseEntity<Seller> updateSeller(@RequestHeader("Authorization") String jwt,
+    @RequestBody Seller seller) throws Exception{
         Seller profile=sellerService.getSellerProfile(jwt);
         Seller updatedSeller=sellerService.updateSeller(profile.getId(), seller);
         return ResponseEntity.ok(updatedSeller);

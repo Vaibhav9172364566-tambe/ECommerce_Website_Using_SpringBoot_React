@@ -46,7 +46,7 @@ public class JwtTokenValidator extends OncePerRequestFilter {
 
                     }catch(Exception e){
 
-                        throw new BadCredentialsException("Invalid JWT tokan..");
+                        throw new BadCredentialsException("Invalid JWT tokan ..");
                     }
                 }
 
