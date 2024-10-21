@@ -32,6 +32,6 @@ public class Wishlistt {
     private User user;
 
     @ManyToMany
-    private Set<Product> products=new HashSet<>();
+    private Set<Product> product=new HashSet<>();
 
 }

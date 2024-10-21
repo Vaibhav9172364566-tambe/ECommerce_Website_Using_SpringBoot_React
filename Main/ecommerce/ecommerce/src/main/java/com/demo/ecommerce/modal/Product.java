@@ -3,7 +3,6 @@ package com.demo.ecommerce.modal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale.Category;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.ElementCollection;
@@ -14,24 +13,21 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
+@Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@EqualsAndHashCode
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    
     private String title; 
     private String description;
     private int mrpPrice;
@@ -57,6 +53,7 @@ public class Product {
     private List<Review> reviews=new ArrayList<>();
 
     
+
 
     
 
