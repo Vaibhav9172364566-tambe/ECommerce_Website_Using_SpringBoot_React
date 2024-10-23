@@ -30,6 +30,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    public Long getId() {
+        return id;
+    }
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 

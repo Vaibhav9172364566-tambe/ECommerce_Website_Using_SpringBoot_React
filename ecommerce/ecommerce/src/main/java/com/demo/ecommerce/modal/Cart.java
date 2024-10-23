@@ -23,7 +23,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode
+
 public class Cart {
 
     @Id
@@ -40,6 +40,7 @@ public class Cart {
     private int totalMrpPrice;
     private int discount;
     private String couponCode;
+    private int totalItem;
 
 
 

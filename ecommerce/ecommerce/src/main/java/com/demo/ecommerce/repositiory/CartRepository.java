@@ -6,5 +6,9 @@ import com.demo.ecommerce.modal.Cart;
 
 public interface CartRepository  extends JpaRepository<Cart,Long>{
 
+
+ 
+    Cart findByUserId(Long id);
+
     
 } 
