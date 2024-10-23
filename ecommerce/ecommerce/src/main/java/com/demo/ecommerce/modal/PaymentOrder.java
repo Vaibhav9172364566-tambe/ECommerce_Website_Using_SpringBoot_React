@@ -10,6 +10,9 @@ import jakarta.persistence.OneToMany;
 import lombok.*;
 import java.util.*;
 
+import com.demo.ecommerce.domain.PaymentMethod;
+import com.demo.ecommerce.domain.PaymentOrderStatus;
+
 @Entity
 @Getter
 @Setter

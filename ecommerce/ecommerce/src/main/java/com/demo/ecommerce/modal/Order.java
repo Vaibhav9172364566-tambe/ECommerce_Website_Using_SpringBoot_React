@@ -15,6 +15,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import java.util.*;
+
+import com.demo.ecommerce.domain.OrderStatus;
+import com.demo.ecommerce.domain.PaymentStatus;
+
 import java.time.LocalDateTime;
 
 

@@ -29,7 +29,7 @@ public class JwtTokenValidator extends OncePerRequestFilter {
             throws ServletException, IOException {
 
                 String jwt=request.getHeader("Authorization");
-                if(jwt!=null){
+                if(jwt!=null ){
                     jwt=jwt.substring(7);
                     try{
 

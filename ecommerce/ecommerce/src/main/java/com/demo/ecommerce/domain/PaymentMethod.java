@@ -1,4 +1,4 @@
-package com.demo.ecommerce.modal;
+package com.demo.ecommerce.domain;
 
 public enum PaymentMethod {
     VAIBHAVPAY,STRIPE

@@ -1,6 +1,8 @@
 package com.demo.ecommerce.modal;
  
 
+import com.demo.ecommerce.domain.PaymentStatus;
+
 import lombok.Data;
 
 @Data
