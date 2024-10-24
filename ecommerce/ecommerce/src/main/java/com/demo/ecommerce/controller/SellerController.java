@@ -149,12 +149,14 @@ import com.demo.ecommerce.domain.AccountStatus;
 import com.demo.ecommerce.domain.USER_ROLE;
 import com.demo.ecommerce.exception.SellerException;
 import com.demo.ecommerce.modal.Seller;
+import com.demo.ecommerce.modal.SellerReport;
 import com.demo.ecommerce.modal.VerificationCode;
 import com.demo.ecommerce.repositiory.VerificationCodeRepo;
 import com.demo.ecommerce.request.LoginRequest;
 import com.demo.ecommerce.response.AuthResponse;
 import com.demo.ecommerce.service.AuthService;
 import com.demo.ecommerce.service.EmailService;
+import com.demo.ecommerce.service.SellerReportService;
 import com.demo.ecommerce.service.SellerService;
 import com.demo.ecommerce.util.OtpUtil;
 
@@ -169,6 +171,7 @@ public class SellerController {
     private final AuthService authService;
     private final SellerService sellerService;
     private final EmailService emailService;
+    private final  SellerReportService sellerReportService;
 
     @PostMapping("/login")
     public ResponseEntity<AuthResponse> loginSeller(@RequestBody LoginRequest req) throws Exception {
@@ -244,6 +247,14 @@ public class SellerController {
         return new ResponseEntity<>(seller,HttpStatus.OK);
     }
 
+    @GetMapping("/report")
+    public ResponseEntity<SellerReport> getSellerReport(@RequestHeader("Authorization") String jwt) throws Exception{
+
+
+        Seller seller=sellerService.getSellerProfile(jwt);
+        SellerReport report=sellerReportService.getSellerReport(seller);
+        return new ResponseEntity<>(report,HttpStatus.OK);
+    }
     
     @GetMapping
     public ResponseEntity<List<Seller>> getAllSeller(@RequestParam(required = false) AccountStatus status){

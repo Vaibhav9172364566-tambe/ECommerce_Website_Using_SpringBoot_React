@@ -47,6 +47,9 @@ public class User {
 
     @jakarta.persistence.OneToMany
     private  Set<Address> address=new  HashSet<>();
+    public Set<Address> getAddress() {
+        return address;
+    }
     @ManyToMany
     @JsonIgnore
 
