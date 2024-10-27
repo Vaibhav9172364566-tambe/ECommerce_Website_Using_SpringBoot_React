@@ -37,6 +37,29 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.razorpay/razorpay-java -->
+<!-- https://mvnrepository.com/artifact/com.razorpay/razorpay-java -->
+<dependency>
+    <groupId>com.razorpay</groupId>
+    <artifactId>razorpay-java</artifactId>
+    <version>1.4.3</version>
+</dependency>
+<dependency>
+    <groupId>com.stripe</groupId>
+    <artifactId>stripe-java</artifactId>
+    <version>23.0.0</version> <!-- or the latest version -->
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/com.stripe/stripe-java -->
+<dependency>
+    <groupId>com.stripe</groupId>
+    <artifactId>stripe-java</artifactId>
+    <version>27.1.1</version>
+</dependency>
+
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>

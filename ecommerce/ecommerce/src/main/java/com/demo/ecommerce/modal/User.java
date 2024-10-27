@@ -40,6 +40,9 @@ public class User {
     private String email;
 
     private String fullName;
+    public String getFullName() {
+        return fullName;
+    }
     private String mobile;
     private USER_ROLE role=USER_ROLE.ROLE_CUSTOMER;
   

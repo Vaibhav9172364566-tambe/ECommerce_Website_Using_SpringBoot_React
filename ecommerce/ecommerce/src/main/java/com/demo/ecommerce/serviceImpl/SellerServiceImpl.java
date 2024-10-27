@@ -165,11 +165,6 @@ public class SellerServiceImpl implements SellerService{
         return sellerRepository.save(seller);
         
     }
-
-   
-
-    
-   
-   
-
 }
+
+
