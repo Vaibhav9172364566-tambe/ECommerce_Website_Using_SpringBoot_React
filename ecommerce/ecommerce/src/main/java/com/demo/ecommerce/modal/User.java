@@ -56,7 +56,10 @@ public class User {
     @ManyToMany
     @JsonIgnore
 
-    private Set<Coupon> useCopons=new HashSet<>();
+    private Set<Coupon> usedCopons=new HashSet<>();
+    public Set<Coupon> getUsedCopons() {
+        return usedCopons;
+    }
     public String getEmail() {
        
         return email;
@@ -69,6 +72,7 @@ public class User {
         
         return role;
     }
+    
 
 
    
