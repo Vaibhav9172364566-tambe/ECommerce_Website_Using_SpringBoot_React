@@ -1,16 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button } from '@mui/material';
+import { Button, ThemeProvider } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
+import Navbar from './customer/components/Navbar';
+import customeTheme from './Theme/customTheme';
 
 
 function App() {
   return (
    <>
-   <div className='p-20'> 
-    
+    <ThemeProvider theme={customeTheme}>
+
+   <div>
+   <Navbar></Navbar>
+
    </div>
+
+
+    </ThemeProvider>
+    
    </>
   );
 }
