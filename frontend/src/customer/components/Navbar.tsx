@@ -1,8 +1,6 @@
 import { Avatar, Box, Button, IconButton, useMediaQuery, useTheme } from '@mui/material'
-import React from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { AddShoppingCart, FavoriteBorder, Storefront } from '@mui/icons-material';
 
 const Navbar = () => {
@@ -11,14 +9,15 @@ const Navbar = () => {
   const isLarge=useMediaQuery(theme.breakpoints.up("lg"))
   return (
     <>
+  
     <div>
       <Box>
-        <div className='flex items-center justify-between px-5 lg:px-20 h-[70px] border-b'>
+        <div className='flex items-center justify-between px-5 lg:px-20 h-[70px]   border-b'>
           <div className='flex items-center gap-9'>
             <div className='flex items-center gap-2'>
-              <IconButton>
+               { !isLarge &&<IconButton>
                 <MenuIcon></MenuIcon>
-              </IconButton>
+              </IconButton>}
               <h1 className='logo cursor-pointer text-lg md:text-2xl text-primary-color '>Vaibhav Bazar</h1>
 
             </div>
@@ -37,9 +36,9 @@ const Navbar = () => {
 
             </IconButton>
             {
-              true?<Button className='flex items-center gap-2 '> <Avatar 
+              false ?<Button className='flex items-center gap-2 '> <Avatar 
               sx={{width:29,height:29}}
-              src='/public/img/Vaiibhav .jpg'></Avatar> <h1 className='font-semibold hidden lg:block'>Vaibhav</h1></Button>:<Button variant='contained'>Login</Button>
+              src='/public/img/Vaiibhav.jpg' alt=''></Avatar> <h1 className='font-semibold hidden lg:block'>Vaibhav</h1></Button>:<Button variant='contained'>Login</Button>
             }
             <IconButton>
               <FavoriteBorder sx={{fontSize:29}}></FavoriteBorder>

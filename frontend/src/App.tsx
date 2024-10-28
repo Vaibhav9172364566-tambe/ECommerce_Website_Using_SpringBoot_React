@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Button, ThemeProvider } from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
+import {  ThemeProvider } from '@mui/material';
 import Navbar from './customer/components/Navbar';
+import Home from './customer/pages/Home/Home'
 import customeTheme from './Theme/customTheme';
 
 
@@ -14,7 +13,9 @@ function App() {
 
    <div>
    <Navbar></Navbar>
+   <Home></Home>
 
+ 
    </div>
 
 
