@@ -1,6 +1,6 @@
 export const womenLevelTwo = [
     {
-      name: "Indian & Fusion Wear",
+      name: "Indian & fusion Wear",
       categoryId: "women_indian_fusion_wear",
       parentCategoryId: "women",
       level: 2

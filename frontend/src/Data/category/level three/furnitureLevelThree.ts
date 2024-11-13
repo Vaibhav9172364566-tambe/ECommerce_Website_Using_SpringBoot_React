@@ -1,6 +1,4 @@
-export const furnitureLevelThree = {
-    homeFurniture: {
-      bedLinenAndFurnishing: [
+export const furnitureLevelThree = [
         {
           name: "Bed Runners",
           categoryId: "furniture_bed_runners_main",
@@ -60,10 +58,7 @@ export const furnitureLevelThree = {
           categoryId: "furniture_sofa_covers",
           parentCategoryId: "furniture_bed_linen_furnishing",
           parentCategoryName: "Bed Linen & Furnishing"
-        }
-      ],
-  
-      flooring: [
+        },
         {
           name: "Floor Runners",
           categoryId: "flooring_floor_runners_main",
@@ -88,9 +83,7 @@ export const furnitureLevelThree = {
           parentCategoryId: "furniture_flooring",
           parentCategoryName: "Flooring"
         }
-      ],
-  
-      bath: [
+      ,
         {
           name: "Bath Towels",
           categoryId: "bath_bath_towels_main",
@@ -138,10 +131,9 @@ export const furnitureLevelThree = {
           categoryId: "bath_shower_curtains",
           parentCategoryId: "furniture_bath",
           parentCategoryName: "Bath"
-        }
-      ],
+        },
   
-      lampsAndLighting: [
+      
         {
           name: "Floor Lamps",
           categoryId: "lamps_floor_lamps",
@@ -178,9 +170,7 @@ export const furnitureLevelThree = {
           parentCategoryId: "furniture_lamps_lighting",
           parentCategoryName: "Lamps & Lighting"
         }
-      ],
-  
-      homeDecor: [
+      ,
         {
           name: "Plants & Planters",
           categoryId: "home_decor_plants_planters",
@@ -265,9 +255,7 @@ export const furnitureLevelThree = {
           parentCategoryId: "furniture_home_decor",
           parentCategoryName: "Home Decor"
         }
-      ],
-  
-      kitchenAndTable: [
+      ,
         {
           name: "Table Runners",
           categoryId: "kitchen_table_runners",
@@ -310,7 +298,7 @@ export const furnitureLevelThree = {
           parentCategoryId: "furniture_kitchen_table",
           parentCategoryName: "Kitchen & Table"
         }
-      ]
-    }
-  };
+      
+    
+      ];
   

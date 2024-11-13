@@ -14,7 +14,7 @@ export const menLevelTwo=[{
         "level":2
     },
     {
-        "name":"Innerwere & Sleepwere",
+        "name":"Innerwere & Sleepwere ",
         "categoryId":"men_innerwear_and_sleepwear",
         "parentCategoryId":"men",
         "level":2

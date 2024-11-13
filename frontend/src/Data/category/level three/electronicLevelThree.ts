@@ -1,88 +1,88 @@
-export const electronicLevelThree = {
-    mobiles: [
+export const electronicLevelThree = [
+    
       {
         name: "Mi",
         categoryId: "mobiles_mi",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Realme",
         categoryId: "mobiles_realme",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Samsung",
         categoryId: "mobiles_samsung",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Infinix",
         categoryId: "mobiles_infinix",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "OPPO",
         categoryId: "mobiles_oppo",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Apple",
         categoryId: "mobiles_apple",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Vivo",
         categoryId: "mobiles_vivo",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Honor",
         categoryId: "mobiles_honor",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Asus",
         categoryId: "mobiles_asus",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Poco X2",
         categoryId: "mobiles_poco_x2",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Realme Narzo 10",
         categoryId: "mobiles_realme_narzo_10",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Infinix Hot 9",
         categoryId: "mobiles_infinix_hot_9",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "IQOO 3",
         categoryId: "mobiles_iqoo_3",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "iPhone SE",
         categoryId: "mobiles_iphone_se",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Motorola Razr",
@@ -94,17 +94,14 @@ export const electronicLevelThree = {
         name: "Realme Narzo 10A",
         categoryId: "mobiles_realme_narzo_10a",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
+        parentCategoryId: "electronic_mobiles"
       },
       {
         name: "Motorola G8 Power Lite",
         categoryId: "mobiles_motorola_g8_power_lite",
         parentCategoryName: "Mobiles",
-        parentCategoryId: "electronics"
-      }
-    ],
-  
-    mobileAccessories: [
+        parentCategoryId: "electronic_mobiles"
+      },
       {
         name: "Mobile Cases",
         categoryId: "mobile_accessories_mobile_cases",
@@ -158,10 +155,7 @@ export const electronicLevelThree = {
         categoryId: "mobile_accessories_mobile_holders",
         parentCategoryName: "Mobile Accessories",
         parentCategoryId: "electronic_mobile_accessories"
-      }
-    ],
-  
-    smartWearableTech: [
+      },
       {
         name: "Smart Watches",
         categoryId: "smart_wearable_tech_smart_watches",
@@ -179,10 +173,7 @@ export const electronicLevelThree = {
         categoryId: "smart_wearable_tech_smart_bands",
         parentCategoryName: "Smart Wearable Tech",
         parentCategoryId: "electronic_smart_wearables"
-      }
-    ],
-  
-    laptops: [
+      },
       {
         name: "Gaming Laptops",
         categoryId: "laptops_gaming_laptops",
@@ -254,19 +245,15 @@ export const electronicLevelThree = {
         categoryId: "laptops_monitors",
         parentCategoryName: "Laptops",
         parentCategoryId: "electronic_laptops"
-      }
-    ],
-  
-    tablets: [
+      },
       {
         name: "Apple iPads",
         categoryId: "tablets_apple_iPads",
         parentCategoryName: "Tablets",
         parentCategoryId: "electronic_tablets"
-      }
-    ],
+      },
   
-    speakers: [
+    
       {
         name: "Home Audio Speakers",
         categoryId: "speakers_home_audio_speakers",
@@ -296,10 +283,7 @@ export const electronicLevelThree = {
         categoryId: "speakers_dth_set_top_box",
         parentCategoryName: "Speakers",
         parentCategoryId: "electronic_speakers"
-      }
-    ],
-  
-    camera: [
+      },
       {
         name: "DSLR & Mirrorless",
         categoryId: "camera_dslr_mirrorless",
@@ -336,6 +320,6 @@ export const electronicLevelThree = {
         parentCategoryName: "Cameras",
         parentCategoryId: "electronic_cameras"
       }
-    ]
-  };
+    
+    ];
   
