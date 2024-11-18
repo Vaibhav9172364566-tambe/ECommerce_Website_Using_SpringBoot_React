@@ -4,6 +4,7 @@ import {  ThemeProvider } from '@mui/material';
 import Navbar from './customer/components/Navbar/Navbar';
 import Home from './customer/pages/Home/Home'
 import customeTheme from './Theme/customTheme';
+import Product from './customer/pages/Product/Product';
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
 
    <div>
    <Navbar></Navbar>
-   <Home></Home>
+   {/* <Home></Home> */}
+   <Product></Product>
 
  
    </div>

@@ -1,0 +1,53 @@
+/* Card Styles */
+.card {
+    @apply relative w-[250px] h-[350px] overflow-hidden;
+}
+
+.card-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* Indicator Styles */
+.indicator {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.indicator-bottom {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator-bottom-active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Line-through Styling */
+.thin-line-through {
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+}
+
+/* Hover Effect for Group */
+.group-hovor-effect {
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.group:hover .group-hovor-effect {
+    transform: translate(0.25rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
