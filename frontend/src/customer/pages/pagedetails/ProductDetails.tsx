@@ -3,6 +3,7 @@ import StarIcon from '@mui/icons-material/Star'
 import { teal } from '@mui/material/colors'
 import { Button, Divider } from '@mui/material'
 import { Add, AddShoppingCart, FavoriteBorder, LocalShipping, Remove, Shield, Wallet, WorkspacePremium } from '@mui/icons-material'
+import SimilarProducts from './SimilarProducts'
 
 const ProductDetails = () => {
 
@@ -117,6 +118,14 @@ const ProductDetails = () => {
             </div>
 
         </section>
+      </div>
+      <div className='mt-20 '>
+        <h1 className='text-lg font-bold'>Similar Product</h1>
+        <div className='pt-5'>
+        <SimilarProducts></SimilarProducts>
+
+
+        </div>
       </div>
     </div>
   )
