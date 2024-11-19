@@ -5,6 +5,8 @@ import Navbar from './customer/components/Navbar/Navbar';
 import Home from './customer/pages/Home/Home'
 import customeTheme from './Theme/customTheme';
 import Product from './customer/pages/Product/Product';
+import PageDetails from './customer/pages/pagedetails/ProductDetails';
+import ProductDetails from './customer/pages/pagedetails/ProductDetails';
 
 
 function App() {
@@ -15,7 +17,8 @@ function App() {
    <div>
    <Navbar></Navbar>
    {/* <Home></Home> */}
-   <Product></Product>
+   {/* <Product></Product> */}
+   <ProductDetails></ProductDetails>
 
  
    </div>
