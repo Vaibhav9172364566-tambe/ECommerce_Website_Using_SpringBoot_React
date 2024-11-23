@@ -4,6 +4,7 @@ import { teal } from '@mui/material/colors'
 import { Button, Divider } from '@mui/material'
 import { Add, AddShoppingCart, FavoriteBorder, LocalShipping, Remove, Shield, Wallet, WorkspacePremium } from '@mui/icons-material'
 import SimilarProducts from './SimilarProducts'
+import ReviewCard from '../Review/ReviewCard'
 
 const ProductDetails = () => {
 
@@ -115,6 +116,10 @@ const ProductDetails = () => {
 
             <div className='mt-5'>
               <p>The saree comes with an unstitched blouse piece HTe blouse worn by the model might be for modelling purpose only.Check image of the blouse piece to understand how the actual blouse piece looks like.</p>
+            </div>
+            
+            <div>
+              <ReviewCard></ReviewCard>
             </div>
 
         </section>

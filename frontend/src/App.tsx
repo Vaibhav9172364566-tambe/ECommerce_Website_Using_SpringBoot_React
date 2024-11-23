@@ -7,6 +7,7 @@ import customeTheme from './Theme/customTheme';
 import Product from './customer/pages/Product/Product';
 import PageDetails from './customer/pages/pagedetails/ProductDetails';
 import ProductDetails from './customer/pages/pagedetails/ProductDetails';
+import Review from './customer/pages/Review/Review';
 
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
    <Navbar></Navbar>
    {/* <Home></Home> */}
    {/* <Product></Product> */}
-   <ProductDetails></ProductDetails>
+   {/* <ProductDetails></ProductDetails> */}
+
+   <Review></Review>
 
  
    </div>
