@@ -9,6 +9,9 @@ import PageDetails from './customer/pages/pagedetails/ProductDetails';
 import ProductDetails from './customer/pages/pagedetails/ProductDetails';
 import Review from './customer/pages/Review/Review';
 import Card from './customer/pages/Card/Card';
+import Checkout from './customer/pages/Checkout/Checkout';
+import { BrowserRouter } from "react-router-dom";
+
 
 
 function App() {
@@ -23,7 +26,8 @@ function App() {
    {/* <ProductDetails></ProductDetails> */}
 
    {/* <Review></Review> */}
-   <Card></Card>
+   {/* <Card></Card> */}
+   <Checkout></Checkout>
 
  
    </div>
