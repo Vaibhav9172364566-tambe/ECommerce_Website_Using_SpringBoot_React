@@ -8,6 +8,7 @@ import Product from './customer/pages/Product/Product';
 import PageDetails from './customer/pages/pagedetails/ProductDetails';
 import ProductDetails from './customer/pages/pagedetails/ProductDetails';
 import Review from './customer/pages/Review/Review';
+import Card from './customer/pages/Card/Card';
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
    {/* <Product></Product> */}
    {/* <ProductDetails></ProductDetails> */}
 
-   <Review></Review>
+   {/* <Review></Review> */}
+   <Card></Card>
 
  
    </div>
