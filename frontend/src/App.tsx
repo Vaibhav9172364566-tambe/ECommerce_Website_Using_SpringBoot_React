@@ -11,6 +11,7 @@ import Review from './customer/pages/Review/Review';
 import Card from './customer/pages/Card/Card';
 import Checkout from './customer/pages/Checkout/Checkout';
 import { BrowserRouter } from "react-router-dom";
+import Account from './customer/pages/Account/Account';
 
 
 
@@ -27,7 +28,8 @@ function App() {
 
    {/* <Review></Review> */}
    {/* <Card></Card> */}
-   <Checkout></Checkout>
+   {/* <Checkout></Checkout> */}
+   <Account></Account>
 
  
    </div>
