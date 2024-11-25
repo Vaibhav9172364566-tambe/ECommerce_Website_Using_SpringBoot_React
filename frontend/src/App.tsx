@@ -12,6 +12,7 @@ import Card from './customer/pages/Card/Card';
 import Checkout from './customer/pages/Checkout/Checkout';
 import { BrowserRouter } from "react-router-dom";
 import Account from './customer/pages/Account/Account';
+import OrderDetails from './customer/pages/Account/OrderDetails';
 
 
 
