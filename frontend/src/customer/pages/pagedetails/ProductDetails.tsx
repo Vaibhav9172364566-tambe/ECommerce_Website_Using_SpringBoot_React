@@ -5,10 +5,14 @@ import { Button, Divider } from '@mui/material'
 import { Add, AddShoppingCart, FavoriteBorder, LocalShipping, Remove, Shield, Wallet, WorkspacePremium } from '@mui/icons-material'
 import SimilarProducts from './SimilarProducts'
 import ReviewCard from '../Review/ReviewCard'
+import { useParams } from 'react-router-dom';
+
 
 const ProductDetails = () => {
 
   const [quantity,setQuantity]=React.useState(1);
+  const { categoryId, name, productId } = useParams();
+
 
   return (
     <div className='px-5 lg:px-20 pt-20'>

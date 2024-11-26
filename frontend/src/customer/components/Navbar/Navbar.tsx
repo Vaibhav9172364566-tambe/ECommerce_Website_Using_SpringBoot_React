@@ -5,6 +5,7 @@ import { AddShoppingCart, FavoriteBorder, Storefront } from '@mui/icons-material
 import CategorySheet from './CategorySheet';
 import { mainCategory } from '../../../Data/category/mainCategory';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const theme=useTheme();
@@ -12,6 +13,7 @@ const Navbar = () => {
   const isLarge=useMediaQuery(theme.breakpoints.up("lg"))
   const [selectedCategory,setSelectedCategory]=useState("men")
   const [showCategorySheet,setShowCategorySheet]=useState(false)
+  const navigate =useNavigate()
   return (
     <>
   
@@ -23,7 +25,7 @@ const Navbar = () => {
                { !isLarge &&<IconButton>
                 <MenuIcon></MenuIcon>
               </IconButton>}
-              <h1 className='logo cursor-pointer text-lg md:text-2xl text-primary-color '>Vaibhav Bazar</h1>
+              <h1 onClick={()=>navigate("/")} className='logo cursor-pointer text-lg md:text-2xl text-primary-color '>Vaibhav Bazar</h1>
 
             </div>
             <ul className='flex items-center font-medium text-gray-800'>
@@ -44,14 +46,14 @@ const Navbar = () => {
 
             </IconButton>
             {
-              false ?<Button className='flex items-center gap-2 '> <Avatar 
+              true ? <Button onClick={()=>navigate("/account/orders")} className='flex items-center gap-2 '> <Avatar 
               sx={{width:29,height:29}}
               src='/public/img/Vaiibhav.jpg' alt=''></Avatar> <h1 className='font-semibold hidden lg:block'>Vaibhav</h1></Button>:<Button variant='contained'>Login</Button>
             }
             <IconButton>
               <FavoriteBorder sx={{fontSize:29}}></FavoriteBorder>
             </IconButton>
-            <IconButton>
+            <IconButton onClick={()=>navigate("/card")}>
               <AddShoppingCart className='text-gray-700' sx={{fontSize:29}}></AddShoppingCart>
             </IconButton>
 

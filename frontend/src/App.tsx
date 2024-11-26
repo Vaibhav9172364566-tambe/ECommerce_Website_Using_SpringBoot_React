@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {  ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import Navbar from './customer/components/Navbar/Navbar';
 import Home from './customer/pages/Home/Home'
 import customeTheme from './Theme/customTheme';
@@ -10,7 +10,7 @@ import ProductDetails from './customer/pages/pagedetails/ProductDetails';
 import Review from './customer/pages/Review/Review';
 import Card from './customer/pages/Card/Card';
 import Checkout from './customer/pages/Checkout/Checkout';
-import { BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Account from './customer/pages/Account/Account';
 import OrderDetails from './customer/pages/Account/OrderDetails';
 
@@ -18,27 +18,43 @@ import OrderDetails from './customer/pages/Account/OrderDetails';
 
 function App() {
   return (
-   <>
-    <ThemeProvider theme={customeTheme}>
+    <>
+      <ThemeProvider theme={customeTheme}>
 
-   <div>
-   <Navbar></Navbar>
-   {/* <Home></Home> */}
-   {/* <Product></Product> */}
-   {/* <ProductDetails></ProductDetails> */}
-
-   {/* <Review></Review> */}
-   {/* <Card></Card> */}
-   {/* <Checkout></Checkout> */}
-   <Account></Account>
-
- 
-   </div>
+        <div>
+          {/* <Home></Home>
+          <Product></Product>
+          <ProductDetails></ProductDetails>
+          <Review></Review>
+          <Card></Card>
+          <Checkout></Checkout>
+          <Account></Account> */}
+          <Navbar></Navbar>
 
 
-    </ThemeProvider>
-    
-   </>
+
+          <Routes>
+
+            <Route path='/' element={<Home></Home>} />
+            <Route path='/products/:category' element={<Product></Product>}></Route>
+
+
+            <Route path='/reviews/:productId' element={<Review></Review>}></Route>
+            <Route path='/product-details/:categoryId/:name/:productId' element={<ProductDetails></ProductDetails>}></Route>
+            <Route path='/card' element={<Card></Card>}></Route>
+            <Route path="/checkout" element={<Checkout></Checkout>}></Route>
+            <Route path='/account/*' element={<Account></Account>}></Route>
+
+
+
+          </Routes>
+
+        </div>
+
+
+      </ThemeProvider>
+
+    </>
   );
 }
 
