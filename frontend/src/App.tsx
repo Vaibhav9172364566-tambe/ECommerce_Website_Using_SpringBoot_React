@@ -13,6 +13,7 @@ import Checkout from './customer/pages/Checkout/Checkout';
 import { Route, Routes } from "react-router-dom";
 import Account from './customer/pages/Account/Account';
 import OrderDetails from './customer/pages/Account/OrderDetails';
+import BecomeSeller from './Become Seller/BecomeSeller';
 
 
 
@@ -43,6 +44,7 @@ function App() {
             <Route path='/product-details/:categoryId/:name/:productId' element={<ProductDetails></ProductDetails>}></Route>
             <Route path='/card' element={<Card></Card>}></Route>
             <Route path="/checkout" element={<Checkout></Checkout>}></Route>
+            <Route path='/become-seller' element={<BecomeSeller></BecomeSeller>}></Route>
             <Route path='/account/*' element={<Account></Account>}></Route>
 
 
