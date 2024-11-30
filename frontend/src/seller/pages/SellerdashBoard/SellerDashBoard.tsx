@@ -1,11 +1,12 @@
 import React from 'react'
 import SellerDrawerList from '../../compontents/SellerDrawerList/SellerDrawerList'
+import SellerRoutes from '../../../Routes/SellerRoutes'
 
 const SellerDashBoard = () => {
 
     const toggleDrawer =()=>{
 
-        
+
 
 
     }
@@ -16,7 +17,7 @@ const SellerDashBoard = () => {
             <section className='hidden lg:block h-full'>
                 <SellerDrawerList toggleDrawer={toggleDrawer}></SellerDrawerList>
             </section>
-            <section className='p-10 w-full lg:w-[80%] overflow-y-auto'>Seller routes
+            <section className='p-10 w-full lg:w-[80%] overflow-y-auto'><SellerRoutes></SellerRoutes>
 
             </section>
 
