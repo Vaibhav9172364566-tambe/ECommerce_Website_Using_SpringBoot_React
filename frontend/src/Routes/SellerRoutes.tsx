@@ -5,7 +5,7 @@ import DashBoard from '../seller/pages/SellerdashBoard/DashBoard'
 import Products from '../seller/pages/Products/Products'
 import Orders from '../seller/pages/Order/Orders'
 import Profile from '../seller/pages/Account/Profile'
-import Transactions from '../seller/pages/Transaction/Transactions'
+import Transactions from '../seller/pages/Payment/Transactions'
 import AddProducts from '../seller/pages/Products/AddProducts'
 import Payments from '../seller/pages/Payment/Payments'
 
