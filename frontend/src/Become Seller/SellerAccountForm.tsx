@@ -92,7 +92,7 @@ const SellerAccountForm = () => {
         
 
 <div className='flex items-center justify-between'>
-        <Button onClick={handleStep(-1)} variant='contained' disabled={activeStep === 0}>
+        <Button onClick={handleStep(-1)} variant='contained' disabled={activeStep == 0}>
           Back
         </Button>
 
@@ -103,7 +103,6 @@ const SellerAccountForm = () => {
           {activeStep === steps.length - 1 ? "Create Account" : "Continue"}
         </Button>
       </div>
-        {/* Add other steps here */}
       </section>
 
      

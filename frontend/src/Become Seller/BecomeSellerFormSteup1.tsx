@@ -20,7 +20,7 @@ const BecomeSellerFormSteup1 = ({formik}:any) => {
         />
 
 
-<TextField
+                        <TextField
                          fullWidth
                          name="GSTIN"
                          label="GSTIN"
@@ -29,7 +29,7 @@ const BecomeSellerFormSteup1 = ({formik}:any) => {
                          error={formik.touched.GSTIN && Boolean(formik.errors.GSTIN)}
                          helperText={formik.touched.GSTIN && formik.errors.GSTIN}
 
-        />
+                          />
 
         </div>
       </Box>
