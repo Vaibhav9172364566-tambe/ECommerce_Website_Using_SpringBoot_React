@@ -15,6 +15,7 @@ import Account from './customer/pages/Account/Account';
 import OrderDetails from './customer/pages/Account/OrderDetails';
 import BecomeSeller from './Become Seller/BecomeSeller';
 import SellerDashBoard from './seller/pages/SellerdashBoard/SellerDashBoard';
+import AdminDashBoard from './admin/Pages/DashBoard/AdminDashBoard';
 
 
 
@@ -48,6 +49,7 @@ function App() {
             <Route path='/become-seller' element={<BecomeSeller></BecomeSeller>}></Route>
             <Route path='/account/*' element={<Account></Account>}></Route>
             <Route path='/seller/*' element={<SellerDashBoard />}></Route>
+            <Route path='/admin/*' element={<AdminDashBoard></AdminDashBoard>}></Route>
 
 
 
