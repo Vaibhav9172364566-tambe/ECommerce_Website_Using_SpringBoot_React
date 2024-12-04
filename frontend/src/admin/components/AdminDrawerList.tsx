@@ -52,7 +52,7 @@ const menu=[
 
     {
         name:"Shop By Category",
-        path:"/admin/shop-by-category",
+        path:"/admin/sshop-by-category",
         icon:<Category className='text-primary'></Category>,
         activeIcon:<Category className='text-white'></Category>
 
